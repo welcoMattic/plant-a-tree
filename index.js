@@ -19,22 +19,22 @@ app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname, 'views'))
 
 app.get('/', (request, response) => {
-  // // Hello, it's good to see you here.
-  // // Change the name and email so we know who you are!
-  // let args = {
-  //     data: {
-  //       "firstname":"Jon",
-  //       "lastname":"Snow",
-  //       "email":"know@nothi.ng",
-  //       "id":appID
-  //     },
-  //     headers: { "Content-Type": "application/json" }
-  // };
-  // // You are nearly there!
-  // client.post("http://plant-a-tree.cleverapps.io/play", args, function (data, response) {
-  //   console.log(response);
-  // });
-  // // If you want to dig further you should watch this: https://www.youtube.com/watch?v=CeaoTAXkIZE
+   // Hello, it's good to see you here.
+   // Change the name and email so we know who you are!
+   let args = {
+       data: {
+         "firstname":"Mathieu",
+         "lastname":"Santostefano",
+         "email":"mathieu.santostefano@gmail.com",
+         "id":appID
+       },
+       headers: { "Content-Type": "application/json" }
+   };
+   // You are nearly there!
+   client.post("http://plant-a-tree.cleverapps.io/play", args, function (data, response) {
+     console.log(response);
+   });
+   // If you want to dig further you should watch this: https://www.youtube.com/watch?v=CeaoTAXkIZE
 
   response.render('home', {
     appID: appID
